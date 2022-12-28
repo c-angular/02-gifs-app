@@ -14,7 +14,7 @@ export class SearchComponent {
   search(): void {
     const value = this.txtSearch.nativeElement.value;
     if(value.trim().length === 0) return;
-    this.gifsService.addHistory(value);
+    this.gifsService.searchGifs(value);
     this.txtSearch.nativeElement.value = '';
   }
 
